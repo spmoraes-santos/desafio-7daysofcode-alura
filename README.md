@@ -1,1 +1,1 @@
-echo "# Desafio 7DaysOfCode - UFRN" > README.md
+Compartilhado com a comunidade no GitHub e nas redes sociais com a hashtag **#7DaysOfCode**

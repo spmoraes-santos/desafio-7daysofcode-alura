@@ -1,17 +1,17 @@
-# Usa imagem base leve do Python
+# Image from python
 FROM python:3.12-slim
 
-# Cria diretório de trabalho
+# Define the directory where the project files will be copied
 WORKDIR /app
 
-# Copia primeiro o arquivo de dependências para aproveitar o cache do Docker
+# Copy the requirements.txt file to the container
 COPY requirements.txt .
 
-# Instala bibliotecas
+# Install libraries from requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copia o resto dos arquivos do projeto para dentro do container
+# Copy the script to the container
 COPY . .
 
-# Comando para rodar o script principal
+# Run the script
 CMD ["python", "analysis_1.py"]

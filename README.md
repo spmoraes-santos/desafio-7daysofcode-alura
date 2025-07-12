@@ -6,7 +6,7 @@ Compartilhado com a comunidade no GitHub e nas redes sociais com a hashtag **#7D
 
 ---
 
-##  O que foi feito até agora
+## O que foi feito até agora
 
 ### Dia 1 – Carregamento e pré-processamento de dados
 
@@ -33,14 +33,14 @@ Este projeto é totalmente executável via **Docker**, sem necessidade de config
 ```bash
 git clone https://github.com/seu-usuario/python_desafio_7_dias.git
 cd python_desafio_7_dias
+```
 
 ---
 
 ## Sobre mim
+
 Sou Stella, pesquisadora e entusiasta da análise de dados, educação e tecnologias livres. Esse projeto é parte do meu processo de manter a prática em dados aplicada a problemas reais.
 
-Se quiser trocar ideia: 
+Se quiser trocar ideia:  
 
-Linkedin: https://www.linkedin.com/in/stella-pires-de-moraes-santos-ribeiro-godoy-28a511102/
-
-
+🔗 [LinkedIn](https://www.linkedin.com/in/stella-pires-de-moraes-santos-ribeiro-godoy-28a511102/)

@@ -22,6 +22,16 @@ Compartilhado com a comunidade no GitHub e nas redes sociais com a hashtag **#7D
 
 ---
 
+### Dia 3 – Análise dos padrões de empréstimos
+
+- Contagem do total de empréstimos únicos e total de exemplares emprestados.
+- Agrupamento dos empréstimos por ano, mês e hora do dia para identificar padrões sazonais e horários.
+- Criação de gráficos de linha e barras para visualização dos dados agrupados.
+- Armazenamento dos dados processados em arquivo `.pkl` para geração de relatórios.
+- Geração de relatório dinâmico em PDF utilizando **Jinja2** e **pdfkit**.
+
+---
+
 ## Rodando com Docker
 
 Este projeto é totalmente executável via **Docker**, sem necessidade de configurar Python ou bibliotecas na sua máquina.

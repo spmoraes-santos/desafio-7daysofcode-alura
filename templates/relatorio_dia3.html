@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Relatório de Empréstimos - Biblioteca UFRN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #114488;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 26px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 18px;
+        }
+        h4 {
+            font-size: 16px;
+            color: #114488;
+            margin-top: 10px;
+        }
+        p {
+            margin: 5px 0 15px;
+        }
+
+        .grafico-section {
+            page-break-inside: avoid;
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        .grafico {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .grafico img {
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+            max-width: 90%;
+            height: auto;
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #777;
+            text-align: center;
+            border-top: 1px solid #ccc;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Relatório de Empréstimos</h1>
+    <h2>Biblioteca da UFRN</h2>
+    <p><strong>Período analisado:</strong> 2010 a 2020</p>
+    <p>
+        Este relatório apresenta os padrões de empréstimos de exemplares ao longo dos anos, meses e horas do dia.
+        Os dados foram obtidos e processados como parte do desafio <em>#7DaysOfCode</em> da Alura.
+    </p>
+
+    <div class="grafico-section">
+        <h3>Empréstimos por ano</h3>
+        <div class="grafico">
+            <img src="data:image/png;base64,{{ grafico_ano }}" alt="Gráfico de empréstimos por ano">
+        </div>
+        <h4>Análise</h4>
+        <p>
+            Observa-se uma tendência de crescimento nos empréstimos até 2013, seguida por uma leve queda e estabilidade entre 2014 e 2017. 
+            Após 2018 a queda se acentua cada vez mais, atingindo o menor valor em 2020, cerva de, aproximadamente 25 % apenas do valor máximo. 
+            Esse declínio pode estar relacionado à adoção de materiais digitais, mudanças no comportamento dos usuários
+            e a pandemia da COVID-19. A análise sugere a necessidade de investigar a causa da redução para direcionar ações corretivas.
+        </p>
+    </div>
+
+    <div class="grafico-section">
+        <h3>Empréstimos por mês</h3>
+        <div class="grafico">
+            <img src="data:image/png;base64,{{ grafico_mes_linha }}" alt="Gráfico de linha - empréstimos por mês">
+        </div>
+        <h4>Análise</h4>
+        <p>
+            A visualização mensal revela que os maiores volumes de empréstimos ocorrem em março e agosto. 
+            A expectativa da diretoria sobre março e setembro como meses de pico não se confirmou totalmente. 
+            Os menores volumes concentram-se em janeiro e dezembro, possivelmente devido às férias acadêmicas,
+            o que indica bons períodos para treinamentos, manutenção de acervo e outras atividades internas.
+        </p>
+    </div>
+
+    <div class="grafico-section">
+        <h3>Empréstimos por mês (barras)</h3>
+        <div class="grafico">
+            <img src="data:image/png;base64,{{ grafico_mes_barra }}" alt="Gráfico de barras - empréstimos por mês">
+        </div>
+        <h4>Análise</h4>
+        <p>
+            O gráfico de barras reforça os dados anteriores e facilita a identificação visual de flutuações sazonais.
+            
+        </p>
+    </div>
+
+    <div class="grafico-section">
+        <h3>Distribuição horária dos empréstimos</h3>
+        <div class="grafico">
+            <img src="data:image/png;base64,{{ grafico_hora }}" alt="Gráfico de empréstimos por hora do dia">
+        </div>
+        <h4>Análise</h4>
+        <p>
+            A análise horária mostra que a maior parte dos empréstimos ocorre entre 10h e 11h, e entre 16h e 18h.
+            Já os períodos entre 7h–9h e após 18h apresentam menor movimentação, apesar de have uma pequena elevação às 20h. Esses intervalos podem ser aproveitados
+            para atividades administrativas, treinamentos e reuniões internas, otimizando o tempo da equipe.
+        </p>
+    </div>
+
+    <div class="footer">
+        <p>Relatório gerado automaticamente em {{ data_geracao }}</p>
+        <p>Desenvolvido por S. P. Moraes-Santos como parte do desafio #7DaysOfCode da Alura</p>
+    </div>
+</body>
+</html>

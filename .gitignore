@@ -6,7 +6,6 @@ __pycache__/
 *.pyc
 
 # Ignorar pastas de output temporário
-output/
 temp_data/
 
 # Arquivos do VS Code

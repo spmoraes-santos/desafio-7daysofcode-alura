@@ -41,7 +41,8 @@ Este projeto é totalmente executável via **Docker**, sem necessidade de config
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/python_desafio_7_dias.git
+ git clone https://github.com/spmoraes-santos/desafio-7daysofcode-alura.git
+
 cd python_desafio_7_dias
 ```
 
